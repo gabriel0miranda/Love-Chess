@@ -6,6 +6,7 @@ local common_sys = require ("common-systems")
 
 
 function love.load()
+    love.window.setMode(560,560)
     World:register(common_sys.new_board_renderer())
     World:register(common_sys.new_functional_system())
 
