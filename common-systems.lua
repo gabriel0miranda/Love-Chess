@@ -31,6 +31,7 @@ new_piece_renderer = function ()
         love.graphics.draw(piece.type.img, piece.pos.x, piece.pos.y)
     end
 end,
+
 new_functional_system = function ()
     local system = System.new{"functional"}
 
