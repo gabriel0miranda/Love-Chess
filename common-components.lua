@@ -30,6 +30,9 @@ end,
 new_piece = function(type)
     local piece = Component.new("piece")
     piece.type = type
+    piece.color = nil
+    piece.row = nil
+    piece.column = nil
     return piece
 end,
 
