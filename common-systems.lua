@@ -28,7 +28,7 @@ new_piece_renderer = function ()
     end
     function renderer:draw(entity)
         local piece = entity:get("piece")
-        love.graphics.draw(piece.type.img, piece.pos.x, piece.pos.y)
+        love.graphics.draw(piece.type.img..piece.color, piece.row, piece.column)
     end
 end,
 
